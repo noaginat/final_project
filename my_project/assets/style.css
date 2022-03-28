@@ -1,0 +1,48 @@
+
+.workers-table {
+    border-collapse: collapse;
+    margin: 12px 0;
+    min-width: 700px;
+    font-size: 1.2em;
+    family-font: 'Garamond', serif;
+
+}
+
+.workers-table tr th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+.workers-table th,
+.workers_table td {
+    padding: 15px 30px;
+}
+
+
+.workers-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.workers-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+
+.workers-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.employee-details {
+    width: 500px;
+    border: 6px solid black;
+    padding: 50px;
+    margin: 16px 450px;
+    background-color: white;
+
+}
+
+
+

@@ -1,0 +1,6 @@
+{'employee_id': 103, 'first_name': 'Luna', 'last_name': 'Brown', 'email': 'lunib@hotmail.com', 'phone_number': '0526928890', 'hire_date': '2018-11-07', 'job_id': 'GR_DSG', 'salary': 16500, 'manager_id': 106, 'department_id': 30}
+
+{'employee_id': 108, 'first_name': 'Soshi', 'last_name': 'Gal', 'email': 'shgal@gmail.com', 'phone_number': '053-5563496', 'hire_date': '2017-08-20', 'job_id': 'UX_UI', 'salary': 15400, 'manager_id': 106, 'department_id': 30}
+
+{'employee_id': 110, 'first_name': 'Kate', 'last_name': 'Moss', 'email': 'katiemoss@gmail.com', 'phone_number': '052-4566399', 'hire_date': '2018-03-03', 'job_id': 'MKT', 'salary': 17000, 'manager_id': 111, 'department_id': 40}
+

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>&nbsp;employee-details </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head><h1></h1>
+<body>
+<div class="home-page" ><a href="{% url 'employees:data' %}" ><img src="{% static 'back.png' %}" style="width:60px; height:60px;"></a></div>
+  <div class="employee-details">
+    <h1><img class="emp-img" src="{{ employee.thumb.url }}" style="width:200px; height:220px;">{{ employee.first_name }}&nbsp{{ employee.last_name }}&nbsp
+        {{ employee.job_id }}</h1>
+     <div class="general"><h3>{{ employee.general }}</h3></div>
+  </div>
+
+
+</body>
+</html>

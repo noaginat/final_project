@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h2>Employees data</h2>
+
+    <div class="employee">
+        <table class="workers-table">
+            <tr>
+                <th>Employee ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>email</th>
+                <th>Phone number</th>
+                <th>Hire date</th>
+                <th>Job ID</th>
+                <th>Salary</th>
+                <th>Manager ID</th>
+                <th>Department ID</th>
+            </tr>
+            <tr>
+                {% for employee in employees %}
+                <td>{{ employee.employee_id }}</td>
+                <td><a href="{% url 'employees:details' slug=employee.slug %}">{{ employee.first_name }}</a></td>
+                <td>{{ employee.last_name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.phone_number }}</td>
+                <td>{{ employee.hire_date }}</td>
+                <td>{{ employee.job_id }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employee.manager_id }}</td>
+                <td>{{ employee.department_id }}</td>
+            </tr>
+                {% endfor %}
+
+           <a href="http://127.0.0.1:8000/my_app/api/" target="_blank" class="api-link"><h3>go to rest api</h3></a>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
